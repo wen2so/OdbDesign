@@ -29,6 +29,7 @@ namespace Odb::Lib::FileModel::Design
             if (!std::filesystem::exists(fontsStandardFile))
             {
                 auto message = "fonts/standard file does not exist: [" + fontsStandardFile.string() + "]";
+                return true;
                 throw invalid_odb_error(message.c_str());
             }
 
