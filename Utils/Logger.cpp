@@ -190,7 +190,7 @@ namespace Utils
 
 		//std::cout << "[Logger::logMessage] wrote to cout and cerr, writing to file..." << std::endl;
 
-		if (m_outputTypes & OutputTypes::File)
+		if (false && (m_outputTypes & OutputTypes::File))
 		{
 			//std::cout << "[Logger::logMessage] opening log file stream (" << m_logFilename << ")..." << std::endl;
 
